@@ -1,0 +1,285 @@
+/* body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.navbar {
+  background-color: #0b2239;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 30px;
+}
+
+.home, .dashboard {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.stop-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.flow-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flow-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  width: 250px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.flow-card.malicious {
+  border-left: 8px solid #ff4d4d;
+}
+
+.flow-card.safe {
+  border-left: 8px solid #4caf50;
+}
+
+.stats {
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+  font-size: 18px;
+} */
+
+
+
+
+
+/* Reset some browser defaults */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+Live Packet Prediction Stop Prediction No live data yet. Click "Start Prediction" to begin.....in center
+
+
+
+
+
+
+/* Reset some browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Layout */
+body {
+  background-color: #f4f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  background-color: #0a3d62;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd32a;
+}
+
+/* Home Section – Center all content vertically and horizontally */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical center */
+  align-items: center; /* Horizontal center */
+  text-align: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #f4f7fa 0%, #eaf2f8 100%);
+  border-radius: 12px;
+  margin: 2rem;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.home h1 {
+  margin-bottom: 1.5rem;
+  color: #0a3d62;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+
+.home p {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Buttons */
+.start-btn,
+.stop-btn {
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stop-btn {
+  background-color: #e74c3c;
+}
+
+.start-btn:hover,
+.stop-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* FlowCard Layout */
+.flow-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+  width: 80%;
+  justify-content: center;
+}
+
+.flow-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flow-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.flow-card p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.flow-card p:last-child {
+  font-weight: bold;
+  color: #0a3d62;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboard h1 {
+  margin-bottom: 1rem;
+  color: #0a3d62;
+  font-size: 2rem;
+}
+
+.dashboard p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  background: white;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer (Optional if you want it later) */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: #0a3d62;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .home h1,
+  .dashboard h1 {
+    font-size: 1.8rem;
+  }
+
+  .flow-list {
+    width: 95%;
+  }
+}
+
